@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Abiyouth Raj</title>
+    <meta name="description" content="Modern Personal Portfolio with 3D animations and interactive elements" />
+    
+    <!-- External Libraries -->
+     <script src="https://cdn.jsdelivr.net/npm/particles-3d@latest/particles-3d.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/three@0.130.1/build/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/framer-motion@10.16.4/dist/framer-motion.min.js"></script>
+     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-DTjSzzvAfQOeDxcn5H+yO7WOlSukBAYDazLzEXzBj9ozmGZ3GmDfuhM/f3DB+kaLZFrZpBbSw93cfJt6Yv+DzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particles Background -->
+     <div id="particles-container"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"> Abiyouth's Profile</div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Hello, I'm</span><br>
+                        <span class="name-text">Abiyouth Raj</span>
+                    </h1>
+                    <p class="hero-subtitle">Aspiring Data Analyst with a growing expertise in Digital Marketing</p>
+                    <p class="hero-description">
+                        Creating digital experiences that combine creativity with cutting-edge technology.
+                        Passionate about building beautiful, functional, and user-friendly applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="cta-button secondary" onclick="downloadResume()">
+                           
+                            <span>Download Resume</span>
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+                </div> 
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="MVR_9749.jpg" alt="Profile" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Aspiring Data analyst & Digital Marketing</h3>
+                    <p>
+                        Hi, I’m Abiyouth Raj — a passionate and versatile professional with a unique blend of skills in Data Analytics,
+                         Digital Marketing, and Creative Media. With a background in commerce and hands-on experience in analytics tools like SQL, Excel,
+                          Tableau, and Python, I specialize in turning complex data into actionable insights that drive smart decisions.    
+                           Beyond numbers, I also bring creativity into the frame as a freelance photographer and video editor, with experience in short films, YouTube content, 
+                          and social media branding
+                    </p>
+                    <p>
+                       Currently, I’m expanding my portfolio through real-world projects, freelancing gigs, and continuous learning. Whether it's a KPI dashboard 
+                       for a hospital, a gender gap analysis in Kollywood, or a clean and modern portfolio website — I approach every project with dedication, precision, and creativity.
+                       When I’m not coding or editing, I’m probably experimenting with new tech tools, helping small businesses grow online, or capturing stories through my lens.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Photography events</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="education-item">
+                    <div class="education-date">2020 - 2023</div>
+                    <div class="education-content">
+                        <h3>Bachelor's in Economics</h3>
+                        <h4>Government Atr's college(Autonomous)-Bharathidasan University</h4>
+                        <p class="location">Kumbakonam, TamilNadu, India</p>
+                        <p class="percentage">Percentage: 63%</p>
+                        <p class="description">
+                            I hold a B.A. in Economics, where I developed a strong foundation in economic theory,
+                             data interpretation, and analytical thinking. Through my coursework, I gained insights into market
+                              behavior, financial systems, and policy impacts—skills that I now apply in
+                               data-driven projects and business analysis
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-date">2019 - 2020</div>
+                    <div class="education-content">
+                        <h3>Higher Secondary Education (12th)-  Commerce (Accounts Specialization)</h3>
+                        <h4>AL.Ameen matriculation higher secondary School,</h4>
+                        <p class="location">Kumbakonam, TamilNadu, India</p>
+                        <p class="percentage">Percentage: 52%</p>
+                        <p class="description">
+                          Specialized in accountancy, business studies, and economics with a strong emphasis on financial principles and bookkeeping.
+                         </p>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-date">2017 - 2018</div>
+                    <div class="education-content">
+                        <h3>Secondary Education (10th)</h3>
+                        <h4>St.Anne's Matriculation higher secondary school</h4>
+                        <p class="location">Kumbakonam, TamilNadu, India</p>
+                        <p class="percentage">Percentage: 55%</p>
+                        <p class="description">
+                            Strong foundation in languages,mathematics and science. 
+                            First introduction to programming and computer basics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Analytics</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Digital Marketing</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">BI tools</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MS Office Suites</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Professional skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Time & Team Management</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Critical Thinking & Problem Solving</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Quick Learning</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Analytical Thinking</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">communication</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                      <i class="fa-solid fa-chart-line fa-beat-fade" style="color: #74C0FC; font-size: 2rem;"></i>
+
+                    </div>
+                    <h3>Data Analyst Certification</h3>
+                    <p class="cert-issuer">Besant technologies</p>
+                    <p class="cert-date">2025</p>
+                  
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-users fa-beat-fade" style="color: #74C0FC;"></i>
+
+                    </div>
+                    <h3>Digital Marketing certification</h3>
+                    <p class="cert-issuer">NSE Academy</p>
+                    <p class="cert-date">2023</p>
+                  
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-keyboard fa-beat-fade" style="color: #74C0FC;"></i>
+                    </div>
+                    <h3>Typewriting</h3>
+                    <p class="cert-issuer">Junior-English</p>
+                    <p class="cert-date">2022</p>
+                    
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                       <i class="fa-regular fa-chart-bar fa-beat-fade" style="color: #74C0FC;"></i>
+                    </div>
+                    <h3>Forage-Virtual Intern</h3>
+                    <p class="cert-issuer">Tata-Data visualisation:Empowering Business with Effective Insights</p>
+                    <p class="cert-date">2025</p>
+                   
+                </div>
+                 <div class="cert-card">
+                    <div class="cert-icon">
+                      <i class="fa-solid fa-chart-pie fa-beat-fade" style="color: #74C0FC;"></i>
+                    </div>
+                    <h3>Foage-Virtual Intern</h3>
+                    <p class="cert-issuer">Accenture-Data Analytics and Visualization</p>
+                    <p class="cert-date">2022</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                           
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Healthcare Analysis & KPI Dasgboard</h3>
+                        <p>Healthcare analysis and create dshboards - excell & Tableau</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Excell</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <div class="project-card" data-category="ui">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop" alt="Design System">
+                        <div class="project-overlay">
+                           
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>H HR Analytics: Employee Motivation & Job Performanc</h3>
+                        <p>Analyzed how employee motivation affects job performance in the IT sector using survey data. 
+                          Created clear visuals to show the link between motivation and productivity.s</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Excell</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                        
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time analytics dashboard with interactive charts</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tableau</span>
+                            <span class="tech-tag">Excell</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>abiyouthraj2613@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8428951178</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kumbakonam, TamilNadu, India</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abiyouth-raj-280883268/" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="+91 8428951178" class="social-link">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+             <div class="container">
+    <form id="contactForm">
+      <div class="form-group">
+        <input type="text" name="user_name" required>
+        <label>Your Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" name="user_email" required>
+        <label>Your Email</label>
+      </div>
+      <div class="form-group">
+        <input type="text" name="subject" required>
+        <label>Subject</label>
+      </div>
+      <div class="form-group">
+        <textarea name="message" required></textarea>
+        <label>Your Message</label>
+      </div>
+      <button type="submit" class="submit-btn">
+        <span>Send Message</span>
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 abiyouthraj. All rights reserved.</p>
+                <p>Built with  using vanilla JavaScript, Three.js, and Particles.js</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
